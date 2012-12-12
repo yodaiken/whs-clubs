@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+    <title>Westlake High School Something</title>
+    <!--CSS Styles-->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font: inherit;
+        }
+        #wrap {
+            min-width: 960px;
+            overflow: auto;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+        #head {
+            overflow: hidden;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+        #head h1 {
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            padding: 80px;
+            font-size: 3em;
+            font-weight: bold;
+            background-image: url(img/orca.jpg);
+            background-size: 100% auto;
+        }
+        #head h1 a {
+            color: #fff;
+        }
+        ul {
+            /* 3px for error margin */
+            margin: 10px 1px 10px 10px;
+        }
+        ul, li {
+            list-style: none;
+        }
+        li {
+            width: 220px;
+            height: 220px;
+            margin: 10px;
+            float: left;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        li h2 a {
+            display: block;
+            background: #000;
+            background: rgba(0, 0, 0, .5);
+            padding: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 60px;
+            text-align: center;
+            color: #fff;
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        window.CNFG = {
+            "clubs": {
+                "Community Service": {
+                    "Teen Community Emergency Response Team (CERT)": "http://example.com/",
+                    "Teen Community Awareness Club (TCAC)": "http://example.com/",
+                    "Westlake Interact Club": "http://example.com/",
+                    "Environmental Club": "http://example.com/",
+                    "Gay-Straight Alliance Club": "http://example.com/",
+                    "Charitable Business and Research Club": "http://example.com/",
+                    "Friends Helping Friends": "http://example.com/",
+                    "C.U.T.E.": "http://example.com/",
+                    "The Young Kipling's": "http://example.com/",
+                    "SHAMU (Sharing Music Club)": "http://example.com/",
+                    "Student Council": "http://example.com/"
+                },
+                "STEM (Science Technology Engineering & Math)": {
+                    "Computer Science Club": "http://example.com/",
+                    "The Elemental Chemistry Club": "http://example.com/",
+                    "Physics Club": "http://example.com/",
+                    "Entrepeneurial Club": "http://example.com/",
+                    "Mu Alpha Theta -- National Organization": "http://example.com/",
+                    "Chap Robotics": "http://example.com/"
+                },
+                "Academics": {
+                    "Model United Nations Club": "http://example.com/",
+                    "AP Club of Westlake High School": "http://example.com/",
+                    "Entrepeneurial Club": "http://example.com/",
+                    "Charitable Business and Research Club": "http://example.com/",
+                    "Policy and Debate Club": "http://example.com/",
+                    "WHS Current Events Club": "http://example.com/",
+                    "YMCA Youth and Government": "http://example.com/",
+                    "Health Occupations Students of America (HOSA)": "http://example.com/"
+                },
+                "Arts": {
+                    "Art Club": "http://example.com/",
+                    "Pinterest Club": "http://example.com/",
+                    "Flame Throwers": "http://example.com/",
+                    "Mud Daubers": "http://example.com/"
+                },
+                "Fine Arts and Music": {
+                    "Live Action Role Playing Club (LARP)": "http://example.com/",
+                    "Club Image -- Photography": "http://example.com/",
+                    "'The Uncommon Crew' -- Art Gallery Curators": "http://example.com/",
+                    "Computer Science Club": "http://example.com/",
+                    "Independent Film Interactive Club": "http://example.com/",
+                    "Improv Team (WIT)": "http://example.com/",
+                    "Sci-Fi Club": "http://example.com/",
+                    "TCGC (Trading Card Game Club)": "http://example.com/",
+                    "Trombone Choir Club": "http://example.com/"
+                },
+                "Languages and Culture": {
+                    "Russian Club": "http://example.com/",
+                    "American Sign Language Club": "http://example.com/",
+                    "Chinese Culture Club": "http://example.com/",
+                    "International Travel Destinations Club": "http://example.com/",
+                    "Latinos New-Comers Club": "http://example.com/",
+                    "Westlake High School Spanish Club": "http://example.com/",
+                    "The Westlake Latin Club": "http://example.com/",
+                    "German Club": "http://example.com/",
+                    "The Dead Poets Society": "http://example.com/",
+                    "Japanese Club": "http://example.com",
+                    "French Club": "http://example.com",
+                    "Puerto Rican Club": "http://example.com",
+                    "League of United Latino American Citizens Youth Council (LULAC)": "http://example.com/",
+                    "Culture Club": "http://example.com/",
+                    "Japanese Culture Club at Westlake HS": "http://example.com/"
+                },
+                "English & History": {
+                    "Creative Writing Club": "http://example.com/",
+                    "jChaps": "http://example.com/",
+                    "History Club": "http://example.com/",
+                    "The Philosophy Club": "http://example.com/",
+                    "Classical Literature Society": "http://example.com/"
+                },
+                "Sports and Outdoor Activities": {
+                    "Ultimate Frisbee Club": "http://example.com/",
+                    "Table Tennis Club": "http://example.com/",
+                    "Rugby Club of Westlake": "http://example.com/",
+                    "Wakeboarding Club": "http://example.com/",
+                    "Jiu-Jitsu Club": "http://example.com/",
+                    "Boy's Lacrosse Organization at Westlake HS": "http://example.com/",
+                    "Mat Angels -- Wrestling Support Club": "http://example.com/",
+                    "Girl's Lacrosse Club at Westlake High School": "http://example.com/",
+                    "Chess Club": "http://example.com/",
+                    "The Westlake Angler's Club": "http://example.com/",
+                    "FCA": "http://example.com/"
+                }
+            }
+        }
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <noscript>This website requires JavaScript. Sorry, you don't seem to have it enabled
+        on your browser. :(</noscript>
+    <div id="wrap">
+        <div id="head">
+            <h1><a href="#">Activities</a></h1>
+        </div>
+        <ul id="act">
+        </ul>
+    </div>
+</body>
+</html>
